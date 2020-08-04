@@ -1,2 +1,2 @@
-# [Weather App](https://lit-lowlands-21798.herokuapp.com/)
+# Weather App
 To show information about current weather.
