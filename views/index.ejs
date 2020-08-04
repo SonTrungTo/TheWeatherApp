@@ -1,0 +1,19 @@
+<%- include('header') %>
+  <% if (weather === null && error === null) { %>
+    <h1> <%="What is the name of your city?"%> </h1>
+  <% } %>
+  <% if (weather !== null) { %>
+  <h1> <%= weather %> </h1>
+  <% } %>
+  <% if (error !== null) { %>
+  <h1> <%= error %> </h1>
+  <% } %>
+  <p>This is a weather app.</p>
+  <form class="pure-form" method="post" role="form">
+    <fieldset>
+      <input type="text" name="city" placeholder="e.g, Helsinki" autofocus required>
+      <input type="submit" class="pure-button pure-button-primary" value="Go">
+    </fieldset>
+  </form>
+  <script type="text/javascript" src="/main.js"></script>
+<%- include('footer') %>
